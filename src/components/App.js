@@ -28,10 +28,10 @@ function App() {
             src={profPic}
             alt="Photo of Joseph Guzzardo Softare Engineer"
           />
+          <Link to="/home">About Me / Home</Link>
           <Link  to="/projects">Projects</Link>
           <Link  to="/articles">Articles</Link>
           <Link to="/resume">Resume</Link>
-          <Link to="/home">About Me / Home</Link>
         </Nav>
         <Body>
           <Switch>

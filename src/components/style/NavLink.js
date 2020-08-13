@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-const Link = styled.a`
+const NavLink = styled.a`
 	color: white;
 `;
 
-export default Link
+export default NavLink

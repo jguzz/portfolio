@@ -3,6 +3,10 @@
 // ==== IMPORTS ====
 import React from "react";
 import styled from "styled-components";
+import SinglePage from './SinglePage'
+// React PDF
+import {PDFViewer, Document, Page } from "@react-pdf/renderer";
+import resume from "../resume.pdf";
 
 // ==== CSS STYLING ====
 const Title = styled.h1`
@@ -19,6 +23,8 @@ function Resume() {
     <>
       <ResumeContainer>
         <Title>Check Out my Resume</Title>
+        <SinglePage pdf={resume}/>
+        
       </ResumeContainer>
     </>
   );

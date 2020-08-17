@@ -1,6 +1,6 @@
 import React from "react";
 // React Router
-import { Route, Switch, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 // Styled Components
 import styled from "styled-components";
 import Body from "./style/Body";
@@ -10,10 +10,10 @@ import NavLink from "./style/NavLink";
 import Profile from "./style/Profile";
 import profPic from "./profile.jpeg";
 // React Components
-import Home from './Home'
-import Projects from './Projects'
-import Articles  from './Articles'
-import Resume from './Resume'
+import Home from "./Home";
+import Projects from "./Projects";
+import Articles from "./Articles";
+import Resume from "./Resume";
 
 const Heading = styled.h1`
   color: ${(props) => props.theme.primary};
@@ -28,10 +28,11 @@ function App() {
             src={profPic}
             alt="Photo of Joseph Guzzardo Softare Engineer"
           />
-          <Link to="/home">About Me / Home</Link>
-          <Link  to="/projects">Projects</Link>
-          <Link  to="/articles">Articles</Link>
-          <Link to="/resume">Resume</Link>
+
+          <NavLink to="/home">About Me / Home</NavLink>
+          <NavLink to="/projects">Projects</NavLink>
+          <NavLink to="/articles">Articles</NavLink>
+          <NavLink to="/resume">Resume</NavLink>
         </Nav>
         <Body>
           <Switch>

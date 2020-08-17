@@ -9,6 +9,7 @@ const Nav = styled.div`
   background-color: ${props => props.theme.primary};
   text-align: center;
   height: 100vh;
+  position: static;
 `;
 
 export default Nav;

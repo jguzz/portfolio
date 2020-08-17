@@ -1,5 +1,7 @@
+// Main componenet holding most of the websites layout.
+
+// ==== IMPORTS ====
 import React from "react";
-// React Router
 import { Route, Switch } from "react-router-dom";
 // Styled Components
 import styled from "styled-components";
@@ -15,14 +17,19 @@ import Projects from "./Projects";
 import Articles from "./Articles";
 import Resume from "./Resume";
 
+// ==== CSS STYLING ====
+// Most styles are imported here... something I wouldn't do again for a project so small.
 const Heading = styled.h1`
   color: ${(props) => props.theme.primary};
 `;
 
+// ==== APP ====
+// Has the side nav bar, and the routes for what will display in the body on the right.
 function App() {
   return (
     <>
       <Wrapper>
+        {/* Side Nav */}
         <Nav>
           <Profile
             src={profPic}
@@ -34,6 +41,7 @@ function App() {
           <NavLink to="/articles">Articles</NavLink>
           <NavLink to="/resume">Resume</NavLink>
         </Nav>
+        {/* Main Body that will display content with router */}
         <Body>
           <Switch>
             <Route path="/home" render={() => <Home />} />

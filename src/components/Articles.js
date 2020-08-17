@@ -1,8 +1,12 @@
+// ==== Where I will keep my articles I publish ====
+
+// ==== Imports ====
 import React from "react";
 import styled from "styled-components";
 
+// ==== CSS STYLING ====
 const ArticleTitle = styled.h4`
-	text-align: center;
+  text-align: center;
 `;
 const ArticleContainer = styled.div`
   display: grid;
@@ -10,25 +14,28 @@ const ArticleContainer = styled.div`
   grid-template-rows: 1fr 1fr;
   height: 30em;
 `;
-const Title = styled.h1`color: ${props => props.theme.primary}; text-align: center; `;
+const Title = styled.h1`
+  color: ${(props) => props.theme.primary};
+  text-align: center;
+`;
 const ArticleImage = styled.img``;
 const Container = styled.div`
   display: block;
 `;
 const TitleContainer = styled.div`
-	width: 100vmin;
-	margin: auto;
-	
+  width: 100vmin;
+  margin: auto;
 `;
 
+// ==== Articles ====
+// Layout with CSS Grid
 function Articles() {
   return (
     <>
       <Container>
-		  <TitleContainer>
-
-        <Title>Articles I've Written</Title>
-		  </TitleContainer>
+        <TitleContainer>
+          <Title>Articles I've Written</Title>
+        </TitleContainer>
         <ArticleContainer>
           <ArticleTitle>
             Begginers Guide to Setting Up and Using React-Bootstrap

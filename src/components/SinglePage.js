@@ -1,7 +1,11 @@
+// This code was obtained from https://levelup.gitconnected.com/displaying-pdf-in-react-app-6e9d1fffa1a9
+// Used to render a single page pdf. 
 
+// ==== IMPORTS ====
 import React, { useState } from "react";
 import { Document, Page } from "react-pdf";
 
+// ==== SINGLE PAGE ====
 export default function SinglePage(props) {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1); //setting 1 to show fisrt page

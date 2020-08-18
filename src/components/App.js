@@ -36,18 +36,18 @@ function App() {
             alt="Photo of Joseph Guzzardo Softare Engineer"
           />
 
-          <NavLink to="/home">About Me / Home</NavLink>
-          <NavLink to="/projects">Projects</NavLink>
-          <NavLink to="/articles">Articles</NavLink>
-          <NavLink to="/resume">Resume</NavLink>
+          <NavLink to="/portfolio/home">About Me / Home</NavLink>
+          <NavLink to="/portfolio/projects">Projects</NavLink>
+          <NavLink to="/portfolio/articles">Articles</NavLink>
+          <NavLink to="/portfolio/resume">Resume</NavLink>
         </Nav>
         {/* Main Body that will display content with router */}
         <Body>
           <Switch>
-            <Route path="/home" render={() => <Home />} />
-            <Route path="/projects" render={() => <Projects />} />
-            <Route path="/articles" render={() => <Articles />} />
-            <Route path="/resume" render={() => <Resume />} />
+            <Route path="/portfolio/home" render={() => <Home />} />
+            <Route path="/portfolio/projects" render={() => <Projects />} />
+            <Route path="/portfolio/articles" render={() => <Articles />} />
+            <Route path="/portfolio/resume" render={() => <Resume />} />
           </Switch>
         </Body>
       </Wrapper>

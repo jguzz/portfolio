@@ -6,7 +6,6 @@ import { Route, Switch } from "react-router-dom";
 // Styled Components
 import styled from "styled-components";
 import Body from "./style/Body";
-import Nav from "./style/Nav";
 import Wrapper from "./style/Wrapper";
 import NavLink from "./style/NavLink";
 import Profile from "./style/Profile";
@@ -21,6 +20,17 @@ import Resume from "./Resume";
 // Most styles are imported here... something I wouldn't do again for a project so small.
 const Heading = styled.h1`
   color: ${(props) => props.theme.primary};
+`;
+const Nav = styled.div`
+position: sticky;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+  flex: 18%;
+  background-color: ${props => props.theme.primary};
+  text-align: center;
+  height: 100vh;
 `;
 
 // ==== APP ====

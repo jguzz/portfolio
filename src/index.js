@@ -6,6 +6,8 @@ import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import * as theme from "./config/theme";
+// import createMemoryHistory from 'history/lib/createMemoryHistory';
+// const history = createMemoryHistory();
 
 ReactDOM.render(
   <React.StrictMode>

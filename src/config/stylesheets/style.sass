@@ -1,3 +1,4 @@
+// Main sass stylesheet
 @use 'stylesheets/main'
 $primary-color: #2e13e3aa
 $light: LightGreen
@@ -7,7 +8,6 @@ $light: LightGreen
   height: 20px
 
 .wrapper
-  @include square
   display: flex
   background-color: $light
   font-color: $primary-color
@@ -27,3 +27,25 @@ $light: LightGreen
   background-color: green
   background-repeat: no-repeat
   background-size: cover
+
+.nav
+  position: sticky
+  top: 0
+  height: 5em
+  background-color: limegreen
+
+.about
+  height: 100vh
+  background-color: blue
+
+.portfolio
+  height: 100vh
+  background-color: red
+
+.education
+  height: 100vh
+  background-color: purple
+
+.contact
+  height: 100vh
+  background-color: yellow

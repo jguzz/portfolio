@@ -1,0 +1,22 @@
+@use 'stylesheets/main';
+.wrapper {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  background-color: LightGreen;
+  font-color: #2e13e3aa; }
+  .wrapper div {
+    background-color: white; }
+    .wrapper div:hover {
+      bacground-color: blue; }
+  .wrapper:hover {
+    bacground-color: blue; }
+
+.home {
+  height: 100vh;
+  background-image: url("https://wallpapermemory.com/uploads/795/plant-background-hd-2560x1440-138491.jpg");
+  background-color: green;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/*# sourceMappingURL=style.css.map */

@@ -17,8 +17,11 @@ function App() {
       <div className="home">
         <p>
           Joseph A Guzzardo <br /> Full Stack Engineer
-        <div className="cursor"></div>
+          <div className="cursor"></div>
         </p>
+        <div className="languages">
+
+        </div>
       </div>
       {/* Sticky nav that links to parts of the page */}
       <div className="nav">

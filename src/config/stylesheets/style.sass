@@ -1,4 +1,5 @@
 // Main sass stylesheet
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap')
 @use 'stylesheets/main'
 $primary-color: #2e13e3aa
 $light: LightGreen
@@ -7,32 +8,58 @@ $light: LightGreen
   width: 20px
   height: 20px
 
+@keyframes blinker
+  50%
+    display: none
+
 .wrapper
-  display: flex
-  background-color: $light
-  font-color: $primary-color
-
-  div
-    background-color: white
-
-    &:hover
-      bacground-color: blue
-
-  &:hover
-    bacground-color: blue
+  font-family: 'Inconsolata', monospace
 
 .home
+  display: flex
+  margin: auto
+  text-align: center
   height: 100vh
-  background-image: url("https://wallpapermemory.com/uploads/795/plant-background-hd-2560x1440-138491.jpg")
-  background-color: green
+  background: rgb(2,36,0)
+  background: linear-gradient(145deg, rgba(2,36,0,1) 0%, rgba(9,121,21,1) 34%, rgba(0,255,117,1) 100%)
   background-repeat: no-repeat
   background-size: cover
+
+  p
+    padding: 30px
+    margin: auto
+    color: white
+    justify-content: center
+    display: float
+    font-size: 5em
+  
+.cursor
+  width: .5em
+  height: 2px
+  background-color: white
+  float: right
+  vertical-align: bottom
+  margin-top: 1em
+  animation: blinker 1s linear infinite
+
+
 
 .nav
   position: sticky
   top: 0
   height: 5em
   background-color: limegreen
+
+  ul
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-around
+    align-items: center
+    &:hover
+      background: pink
+    li
+      text-decoration: none
 
 .about
   height: 100vh

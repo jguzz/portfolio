@@ -20,12 +20,20 @@ $light: LightGreen
     margin-left: 0%
     width: 100%
 
+@keyframes bob
+  0%, 100%
+    transform: rotate(180deg) translateY(0%)
+  50%
+    transform: rotate(180deg) translateY(-15%)
+    font-size: 6em
+
 .wrapper
   font-family: 'Inconsolata', monospace
   background: black
 
 .home
   display: flex
+  flex-direction: column
   margin: auto
   text-align: center
   height: 100vh
@@ -42,6 +50,7 @@ $light: LightGreen
     justify-content: center
     display: float
     font-size: 5em
+    text-shadow: 1px 1px 1px #A9A9A9
 
   .cursor
     width: .5em
@@ -50,8 +59,16 @@ $light: LightGreen
     float: right
     vertical-align: bottom
     margin-top: 1em
+    margin-left: 0px
     animation: blinker 2s linear infinite
     opacity: 85%
+
+  .triforce
+    font-size: 4em
+    color: white
+    align-self: center
+    margin-bottom: 1em
+    animation: bob 2s infinite
 
 .nav
   position: sticky

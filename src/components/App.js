@@ -7,6 +7,9 @@ import profPic from "./profile.jpeg";
 // ==== CSS STYLING ====
 // Most styles are imported here... something I wouldn't do again for a project so small.
 import "../config/stylesheets/style.sass";
+// ==== ICONS ====
+
+import { GiTriforce } from "react-icons/gi";
 
 // ==== APP ====
 // Has the side nav bar, and the routes for what will display in the body on the right.
@@ -17,11 +20,9 @@ function App() {
       <div className="home">
         <p>
           Joseph A Guzzardo <br /> Full Stack Engineer
-          <div className="cursor"></div>
+          <div className="cursor" />
         </p>
-        <div className="languages">
-
-        </div>
+      <GiTriforce className="triforce" />
       </div>
       {/* Sticky nav that links to parts of the page */}
       <div className="nav">

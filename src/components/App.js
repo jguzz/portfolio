@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="wrapper">
       {/* What the user sees when the land on the page */}
-      <div className="home">
+      <div id="home" className="home">
         <p>
           Joseph A Guzzardo <br /> Full Stack Engineer
           <div className="cursor" />
@@ -26,22 +26,22 @@ function App() {
       </div>
       {/* Sticky nav that links to parts of the page */}
       <div className="nav">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Portfolio</li>
-          <li>Education</li>
-          <li>Contact</li>
-        </ul>
+
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+
       </div>
       {/* About me */}
-      <div className="about"></div>
+      <div id="about" className="about"></div>
       {/* Shows websites ive made with videos */}
-      <div className="portfolio"></div>
+      <div id="portfolio" className="portfolio"></div>
       {/* Education and publications */}
-      <div className="education"></div>
+      <div id="education" className="education"></div>
       {/* Icons for social media, email form for email. */}
-      <div className="contact"></div>
+      <div id="contact" className="contact"></div>
     </div>
   );
 }
